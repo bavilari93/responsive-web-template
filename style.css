@@ -5,6 +5,7 @@ html{
 	align-content: center;
 }
 .wrap{
+	width: 100%;
 	top:0px; 
 	left: 0px;
 	margin:0 auto;
@@ -35,7 +36,6 @@ button{
 
 .header{
 	z-index: 5;
-	width: 100%;
 	background-color: black;
 	color: white;
 	font-size: 1rem;
@@ -43,6 +43,7 @@ button{
 	padding-left: 30px;
 	position: relative;
 	margin:0px;
+	border-left-color: rgba(0, 0, 0, 0.3);
 }
 .header h1{
 	text-transform: uppercase;
@@ -79,7 +80,7 @@ button{
 }
 .intro-collection h1{
 	font-size: 1.5rem;
-	width: 100px;
+	width: 150px;
 	height: 50px;
 	text-align: center;
 	text-transform: uppercase;
@@ -94,8 +95,21 @@ button{
 .main-img{
 	position: absolute;
 	width: 100%;
-	height:350px;
-	top:30px; 
-	left:10px;
-	background-color: pink;
+	height:300px;
+	top:78px; 
+	left: 50px;
+	overflow: hidden;
+	background-image: url("./k-kloss.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	/*background-position:left;*/
+	
 	}
+
+	@media only screen and (max-width: 480px;){
+		.main-img{
+			width: 90%;
+	}
+	}
+}
+
